@@ -8,13 +8,9 @@ import Home from './home'
 import Header from './Header '
 
 
-
 function App() {
   return ( 
   
-    
-
-
     
 
 
@@ -24,6 +20,8 @@ function App() {
         <Route exact path="/" component= {Home} />
         <Route exact path="/Search" component= {Search} />
         <Route exact path="/Results" component= {Results} />
+        
+
      </div>
    
    
@@ -34,5 +32,4 @@ function App() {
       
   
 }
-
 export default App;

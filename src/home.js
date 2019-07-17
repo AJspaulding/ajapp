@@ -1,13 +1,27 @@
 import React from 'react'
-import {Button} from 'react-bootstrap'
+
 class Home extends React.Component {
-  render() {
-    return  <h1>  Welcome to AJ's event App </h1> 
-    
+    constructor() {
+      super();
+      this.state ={
+      quote:[] 
+      };
+        }
+       
+        
   
-}    
+        async componentDidMount() {
+          const response = await fetch('https://api.chucknorris.io/jokes/random')
+          const json = await response.json()
+          console.log(json)
+          this.setState({ quote: json.results })
+        }
+  
+  
+  
+    render() {
+      return  <p>hi</p>
+      
     }
-  
-
-
-export default Home
+  }
+  export default Home

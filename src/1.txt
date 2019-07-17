@@ -1,0 +1,112 @@
+<BrowserRouter>
+       <div>
+         <nav>
+           <ul>
+             <li><Link to="/">  Home  </Link></li>
+            <li> <Link to="/search"> search  </Link></li>
+            <li><Link to= "/Results">  Results  </Link></li>
+           </ul>
+          </nav>
+          <Route exact path="/" component={App} />
+          <Route path="/search" component={Search} />
+          <Route path="/results" component={Results} />
+      </div> 
+         <h1>  Welcome to AJ's event App </h1>
+       <div className='col-md-12 text-center'>
+        <Button  variant="primary"size='lg'>Let's begin</Button>
+      </div> 
+
+     </BrowserRouter> 
+      <Card style={{ width: '18rem' }}>
+<Card.Img variant="top" src="spec2.jpg"/>
+<Card.Body>
+ <Card.Title>Card Title</Card.Title>
+ <Card.Text>
+  Some quick example text to build on the card title and make up the bulk of
+  the card's content.
+ </Card.Text>
+   <Button variant="primary">Go somewhere</Button>
+</Card.Body>
+</Card>
+
+
+   
+<div className="search" />
+<Route path="/search" exact
+  render={() =>
+    <h1> search</h1> />
+
+
+
+
+ <div className="Results" />
+<Route path="/results" exact
+  render={() =>
+    <h1> search</h1>
+/>
+
+<div>
+        <nav className="navbar navbar-dark">
+           <ul className= "nav nabar-nav">
+             <li><Link to="/">Home</Link></li>
+             <li> <Link to="/search">search</Link></li>
+             <li><Link to= "/Results">Results </Link></li>
+           </ul>
+        </nav>
+       </div>
+       <div class='col-md-12 text-center'>
+      <Button  variant="primary"size='lg' href="/search">Let's begin</Button>
+      </div>   
+      
+                
+                const Home = () => (
+                         <h1>  Welcome to AJ's event App </h1>
+                    <div class='col-md-12 text-center'>
+                      <Button  variant="primary"size='lg'>Let's begin</Button>
+                    </div> 
+                );
+        
+                <div>
+                <nav>
+                  <ul>
+                    <li><Link to="/">  Home  </Link></li>
+                    <li> <Link to="/search"> search  </Link></li>
+                    <li><Link to= "/Results">  Results  </Link></li>
+                  </ul>
+                </nav>
+                  <Router>
+                    <Home path="/" />
+                    <Search path="/search" />
+                    <Results path="/results" />
+                    </Router>
+       
+              </div>
+              
+              const Home = () => (
+                                <h1>  Welcome to AJ's event App </h1>
+                           <div class='col-md-12 text-center'>
+                             <Button  variant="primary"size='lg'>Let's begin</Button>
+                           </div> 
+                       );
+        <div className="search">
+         <Route path="/search" exact/>
+         <h1> search</h1>
+        </div>
+
+       <div className="Results">
+         <Route path="/results"/>
+          
+           <h1> search</h1>
+               
+       </div>
+
+    
+<div>
+<nav>
+  <ul>
+    <li><Link to="/">  Home  </Link></li>
+    <li> <Link to="/search"> search  </Link></li>
+    <li><Link to= "/Results">  Results  </Link></li>
+  </ul>
+</nav>
+</div>  

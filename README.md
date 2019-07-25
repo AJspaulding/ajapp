@@ -1,3 +1,4 @@
+My random qutoe,joke and advice app.  ajpp 
 
 To run make sure you have nodejs installed.  Go to  project folder run npm install then run npm start.
 

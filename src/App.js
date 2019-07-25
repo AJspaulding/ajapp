@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, BrowserRouter } from 'react-router-dom' // importing route and browserRouter from  react router
 // inporting componets into app
 import  Dog from './Dog'
-import Results from './Results'
+import Results from './results'
 import './App.css'
 import Home from './home'
 import Header from './Header '
@@ -19,7 +19,7 @@ function App() {
         <Route path='/' component={Header} />
         <Route exact path="/" component= {Home} />
         <Route exact path="/Dog" component= {Dog} />
-        <Route exact path="/Results" component= {Results} />
+        <Route exact path="/results" component= {Results} />
         
 
      </div>

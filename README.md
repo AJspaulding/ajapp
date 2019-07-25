@@ -1,3 +1,30 @@
+
+To run make sure you have nodejs installed.  Go to  project folder run npm install then run npm start.
+
+
+This app was designed to pass the javascript/react class. I won't be using it as a portfolio piece as is but hope to continue working on it after class is over to make it pretty.
+
+
+
+I used 3 different apis with 3 different routes
+1 chuck Norris jokes  from chucknorris.io
+2 random advice from https://api.adviceslip.com/ 
+3  Kayne West quotes from https://kanye.rest/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

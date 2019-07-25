@@ -1,26 +1,35 @@
 import React from 'react'
-import { Card, Button } from 'react-bootstrap'
+
 
 class Results extends React.Component {
   constructor() {
     super();
     this.state ={
-    quote:[] ,
-    trump:[]
+    quote:[] 
     };
       }
       async componentDidMount() {
         const response = await fetch('https://api.kanye.rest')
         const json = await response.json()
         console.log(json)
-        this.setState({ quote: json.results })
+        this.setState({ quote: json.quote })
       }
 
       
 
   render() {
-    return  <p>hi</p>
+
+    if (!this.state.quote) return <p>No answer</p>
     
-  }
+    
+    return (
+      <div>
+      <h1>kayne west quotes</h1>
+      <h1>{this.state.quote}</h1>
+    </div>
+    )
+
+    
+    }
 }
 export default Results

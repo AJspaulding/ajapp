@@ -4,23 +4,34 @@ class Home extends React.Component {
     constructor() {
       super();
       this.state ={
-      quote:[] 
+      fact:[] 
       };
         }
        
-        
+        // fetch request for chuck norris facts\\ 
   
         async componentDidMount() {
           const response = await fetch('https://api.chucknorris.io/jokes/random')
           const json = await response.json()
           console.log(json)
-          this.setState({ quote: json.results })
+          this.setState({ fact: json.value }) // quote was store in value
         }
   
   
   
     render() {
-      return  <p>hi</p>
+      if (!this.state.fact) return <p>No answer</p> // respone if fetch failed 
+    
+    
+      return (
+        <div>
+        <h1>Chuck Norris joke Facts</h1>
+        <h1>{this.state.fact}</h1>   
+      </div>
+      )
+
+      
+      
       
     }
   }

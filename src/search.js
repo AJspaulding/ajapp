@@ -1,7 +1,7 @@
-import React from 'react'
+import Search from 'react'
 
 
-class Search extends React.Component {
+class Dog extends React.Component {
   constructor() {
     super();
     this.state ={
@@ -12,17 +12,23 @@ class Search extends React.Component {
         const response = await fetch('https://dog.ceo/api/breeds/image/random')
         const json = await response.json()
         console.log(json)
-        this.setState({ images: json.results })
+        this.setState({ images: json.message })
       }
 
-  render()  { return <img src={this.state.images} alt="the"/>;
-   
+  render(){
+  if (!this.state.images) return <p>No answer</p>
+    
+    
+  return (
+    <div>
+    <img scr={this.state.images} alt="dog"/>
+  </div>
  
     
-  
-}    
+  )
+  }
     }
   
 
 
-export default Search
+export default search

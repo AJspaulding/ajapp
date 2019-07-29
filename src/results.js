@@ -25,7 +25,9 @@ class Results extends React.Component {
     return (
       <div>
       <h1>kayne west quotes</h1>
-      <h1>{this.state.quote}</h1>
+      <img src={ require('./images/kanye.jpg') } />
+      <h2>{this.state.quote}</h2>
+      
     </div>
     )
 

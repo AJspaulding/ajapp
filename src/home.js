@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 class Home extends React.Component {
     constructor() {
       super();
@@ -26,7 +27,8 @@ class Home extends React.Component {
       return (
         <div>
         <h1>Chuck Norris joke Facts</h1>
-        <h1>{this.state.fact}</h1>   
+        <img src={ require('./images/chuck.jpg') } />
+        <h2>{this.state.fact}</h2>   
       </div>
       )
 

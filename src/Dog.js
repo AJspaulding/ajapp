@@ -23,8 +23,10 @@ class Dog extends React.Component {
 
         return (
             <div>
-            <h1>advice</h1>
-            <h1>{this.state.fact}</h1>
+            <h1> Free Advice</h1>
+            <img src={ require('./images/advice.jpg') } />
+            <h2>{this.state.fact}</h2>
+            
           </div>
 
         )
